@@ -8,17 +8,17 @@ function showElementById(elementId){
     shoElement.classList.remove('hidden')
 }
 
-// set key Hight color
+// set key Hight color  //m-28
 function setBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
 }
 
-// // remove key Hight color
-// function removeBackgroundColorById(elementId){
-//     const element = document.getElementById(elementId);
-//     element.classList.remove('bg-orange-400');
-// }
+// // remove key Hight color  //m-28
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
 
 
 function getARandomAlphabet(){
