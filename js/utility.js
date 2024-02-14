@@ -8,18 +8,46 @@ function showElementById(elementId){
     shoElement.classList.remove('hidden')
 }
 
-function getARandomAlphabet(){
-    // get or create an alphabet array
-    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-    const alphabets = alphabetString.split('');  // string থেকে  array  কে বিভিন্ন ভাগে ভাগ করা
-    // console.log(alphabets) 
+// set key Hight color
+function setBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
 
-    // get a random index between 0 -25
+// // remove key Hight color
+// function removeBackgroundColorById(elementId){
+//     const element = document.getElementById(elementId);
+//     element.classList.remove('bg-orange-400');
+// }
+
+
+function getARandomAlphabet(){
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+    const alphabets = alphabetString.split('');
+
     const randomNumber = Math.random()*25;
     const index = Math.round(randomNumber);
 
     const alphabet = alphabets[index];
-    
-    // console.log(index, alphabet);
     return alphabet;
 }
+
+
+
+
+
+// function getARandomAlphabet(){
+//     // get or create an alphabet array
+//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+//     const alphabets = alphabetString.split('');  // string থেকে  array  কে বিভিন্ন ভাগে ভাগ করা
+//     // console.log(alphabets) 
+
+//     // get a random index between 0 -25
+//     const randomNumber = Math.random()*25;
+//     const index = Math.round(randomNumber);
+
+//     const alphabet = alphabets[index];
+    
+//     // console.log(index, alphabet);
+//     return alphabet;
+// }
