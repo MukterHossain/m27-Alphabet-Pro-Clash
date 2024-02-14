@@ -21,6 +21,22 @@ function removeBackgroundColorById(elementId){
 }
 
 
+//short code start //m-28
+function getTextElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+}
+
+//short code start //m-28
+function setTextElementValueById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
+
+
+
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
